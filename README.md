@@ -20,4 +20,5 @@ The `app/` directory contains code to run the data cleaning, topic modeling, GPT
 - [lda](app/lda.py) - code to run LDA topic modeling
 - [gpt_utils](app/gpt_utils.py) - code to communicate with OpenAI GPT models
 
-[![Watch Demo](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/SjW10t-bOO8)
+[![Watch Demo](https://img.youtube.com/vi/SjW10t-bOO8/0.jpg)](https://youtu.be/SjW10t-bOO8)
+
