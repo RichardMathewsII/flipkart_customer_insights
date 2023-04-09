@@ -18,6 +18,8 @@ One might wonder why we can't just send GPT all the reviews and ask it to ideate
 
 For example, in this application, the number of tokens sent to GPT is just 50 tokens (5 topics and 5 tokens per topic for both positive and negative reviews). In total, there are 8,101,246 tokens in this corpus of product reviews. By applying LDA (10 topics per product, 5 tokens per topic), I reduce this token count to 15,825 tokens! That is a **99.8% reduction in costs**. That's not much for this dataset, but it will be after scaling to all sellers and products on Flipkart, not to mention the added latency of sending GPT all of those tokens.
 
+![](app/assets/cost_reduction.png)
+
 This is an important demonstration of how data scientists should think about scaling solutions involving LLMs. It's not wise to brute force NLP problems with LLMs when basic preprocessing and token reduction methods prior to the LLM prompts can slash most of the costs and latency in a scaled solution.
 
 
