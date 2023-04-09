@@ -4,6 +4,10 @@
 ## Dataset
 TODO
 
+## Approach
+**Why do topic modeling rather than sending GPT all the reviews?**
+- Costs. OpenAI charges on a per-token basis, so sending all reviews would be orders of magnitude more expensive. We can get similar results by first collapsing the tokens to just 50 tokens (5 topics and 5 tokens per topic for both positive and negative reviews).
+
 ## Notebooks
 The notebooks demonstrate EDA, cleaning steps, and NLP work.
 - [cleaning.ipynb](cleaning.ipynb) - data cleaning
@@ -15,3 +19,5 @@ The `app/` directory contains code to run the data cleaning, topic modeling, GPT
 - [cleaning](app/cleaning.py) - code to clean Flipkart product reviews
 - [lda](app/lda.py) - code to run LDA topic modeling
 - [gpt_utils](app/gpt_utils.py) - code to communicate with OpenAI GPT models
+
+[![Watch Demo](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/SjW10t-bOO8)
