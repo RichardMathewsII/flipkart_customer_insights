@@ -2,14 +2,18 @@ import streamlit as st
 import pandas as pd
 from cleaning import clean_dataset
 from main import generate_customer_insights_report
+import toml
 
-icon = open("assets/Flipkart-Emblem.png", "rb").read()
+# load toml config
+config = toml.load("config.toml")
+
+icon = open(config["paths"]["icon"], "rb").read()
 st.set_page_config(
     page_title="CustomerInsights",
     page_icon=icon
 )
 # render Flipkart image
-image_file = "assets/Flipkart-logo.png"
+image_file = config["paths"]["image"]
 image = open(image_file, "rb").read()
 st.image(image)
 
@@ -27,7 +31,7 @@ hide_menu_style = """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 # Read the CSV file into a pandas dataframe
-df = pd.read_csv('../flipkart_product.csv')
+df = pd.read_csv(config["paths"]["data"])
 
 # clean the dataset
 df_cleaned = clean_dataset(df)

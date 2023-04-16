@@ -1,0 +1,4 @@
+[paths]
+data='../flipkart_product.csv'
+image='assets/Flipkart-logo.png'
+icon='assets/Flipkart-Emblem.png'
