@@ -1,4 +1,5 @@
-*.csv
+cleaned_product_reviews.csv
+flipkart_product.csv
 *.json
 __pycache__/
 .DS_Store
