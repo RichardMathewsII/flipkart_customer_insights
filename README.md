@@ -33,9 +33,21 @@ The `app/` directory contains code to run the data cleaning, topic modeling, GPT
 - [cleaning](app/cleaning.py) - code to clean Flipkart product reviews
 - [lda](app/lda.py) - code to run LDA topic modeling
 - [gpt_utils](app/gpt_utils.py) - code to communicate with OpenAI GPT models
+- [app](app/app.py) - code to run streamlit app
 
 ### Demo
 [![Watch Demo](https://img.youtube.com/vi/SjW10t-bOO8/0.jpg)](https://youtu.be/SjW10t-bOO8)
 
 ## Running Code
-TODO
+**Environment**
+- Environment requirements for notebooks and app are in [requirements.txt](./requirements.txt)
+- To run any GPT requests, you need to create a `.env` file in the root of the repo and add your OpenAI API key as follows: `API_KEY=<insert OpenAI key>`
+
+**Notebooks**
+- Notebooks should run on sample csv's
+- Note the csv files contain reviews for one product to reduce the size of data in the git system. The full dataset can be found at the link provided in the Dataset section above
+
+**App**
+- You need an OpenAI API key to run the app
+- You need to download the complete dataset at the Kaggle link and update the data path in [config.toml](app/config.toml) to point to it
+- Navigate to app/ directory in the command line, activate the conda environment, and run `streamlit run app.py`
