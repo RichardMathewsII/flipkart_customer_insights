@@ -26,6 +26,7 @@ This is an important demonstration of how data scientists should think about sca
 The notebooks demonstrate EDA, cleaning steps, and NLP work.
 - [cleaning.ipynb](cleaning.ipynb) - data cleaning
 - [topic_modeling.ipynb](topic_modeling.ipynb) - topic modeling and GPT example
+- [initial eda](eda.ipynb) - preliminary EDA
 
 ## App
 The `app/` directory contains code to run the data cleaning, topic modeling, GPT prompt requests, and streamlit app.
