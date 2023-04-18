@@ -2,7 +2,15 @@
 > This repo houses the code for a hypothetical AI system that delivers product insights to Flipkart sellers, including key patterns in customer complaints and praise, as well as recommendations to improve the product.
 
 ## Dataset
-TODO
+This dataset includes:
+	Product’s Name: Contains a total of 104 different products from flipkart.com.
+	Price: In Indian Rupees. 
+	Rate: Customer rating on a scale of 1 to 5.
+	Review: Customer review.
+	Summary: A detailed description of the product.
+
+Data was scraped from FlipKart over a three day span. Authors include Mansi Thummar (owner) and Niralii Vaghani (editor).
+Mansi Thummar, &amp; Niralii Vaghani. (2023). <i>Flipkart Products Review Dataset</i> [Data set]. Kaggle. https://doi.org/10.34740/KAGGLE/DSV/4901012
 
 ## Approach
 The general approach is to identify the dominant themes in positive and negative customer reviews for each product and feed the customer complaint patterns into GPT to produce product improvement recommendations. The Latent Dirichlet Allocation (LDA) algorithm is an effective technique for extracting out "topics" from a corpus. I assume negative customer reviews can be distilled into a small set of common complaints that a topic modeling algorithm like LDA can find, and this reduced representation of the corpus can be fed to an LLM model to brainstorm product improvement ideas.
