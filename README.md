@@ -7,8 +7,8 @@ This dataset includes:
 - Product’s Name: Contains a total of 104 different products from flipkart.com.
 - Price: In Indian Rupees. 
 - Rate: Customer rating on a scale of 1 to 5.
-- Review: Customer review.
-- Summary: A detailed description of the product.
+- Review: Title of the customer review.
+- Summary: Customer review of the product.
 
 Data was scraped from FlipKart over a three day span. Authors include Mansi Thummar (owner) and Niralii Vaghani (editor).
 Mansi Thummar, &amp; Niralii Vaghani. (2023). <i>Flipkart Products Review Dataset</i> [Data set]. Kaggle. https://doi.org/10.34740/KAGGLE/DSV/4901012
